@@ -46,6 +46,15 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "cs-check": [
+            "vendor/bin/php-cs-fixer fix --dry-run --diff"
+        ],
+        "cs-fix": [
+            "vendor/bin/php-cs-fixer fix --diff"
+        ],
+        "analyze": [
+            "vendor/bin/phpstan analyze"
         ]
     },
     "extra": {
